@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(165, 27, 27);
+}
+
+header p{
+    font-size: 20px;
+    color: rgb(165, 27, 27);
+
+}
+
+/* Display flex will organize from left to right */
+.pads{
+    background: lightgoldenrodyellow;
+    width: 100%;
+    display: flex;
+
+}
+
+.pad1{
+    background: #ec0909;
+}
+
+.pad2{
+    background: #db6f09;
+}
+
+.pad3{
+    background: #d8c40b;
+}
+
+.pad4{
+    background: #74dd12;
+}
+
+.pad5{
+    background: #08d62b;
+}
+
+.pad6{
+    background: #0cb1e4;
+}
+
+.pad7{
+    background: #070adb;
+}
+
+.pad8{
+    background: #800ae0;
+}
+
+.pad9{
+    background: #cf08d6;
+}
+
+.pad10{
+    background: #e40940;
+}
+
+/* Can select all divs inside an element */
+.pads > div{
+    height: 50px;
+    width: 50px;
+    flex: 1;
+}
+
+.visual > div {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 10%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 90%;
+    }
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
